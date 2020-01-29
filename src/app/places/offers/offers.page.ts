@@ -8,12 +8,12 @@ import { PlacesService } from '../places.service';
   styleUrls: ['./offers.page.scss'],
 })
 export class OffersPage implements OnInit {
-  loadedPlace: Place[];
+  offers: Place[];
 
   constructor(private placeService: PlacesService) { }
 
   ngOnInit() {
-    this.loadedPlace = this.placeService.places;
+    this.offers = this.placeService.places;
   }
 
 }
